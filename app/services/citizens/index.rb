@@ -3,7 +3,7 @@ module Citizens
     private
 
     def result
-      Citizen.all.order(:name).limit(1).offset(offset)
+      Citizen.all.order(:name).limit(5).offset(offset)
     end
 
     def offset
