@@ -32,7 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_12_231749) do
     t.bigint "cns"
     t.string "email"
     t.datetime "birth_date", precision: nil
-    t.bigint "telefone"
+    t.bigint "phone"
     t.string "picture"
     t.integer "status"
     t.datetime "created_at", null: false
