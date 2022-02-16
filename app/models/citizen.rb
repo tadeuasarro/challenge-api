@@ -1,5 +1,5 @@
 class Citizen < ApplicationRecord
-  validates :name, :cpf, :cns, :email, :birth_date, :phone, :picture, :status, presence: true
+  validates :name, :cpf, :cns, :email, :birth_date, :phone, presence: true
 
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 

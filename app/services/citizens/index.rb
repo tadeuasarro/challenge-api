@@ -7,7 +7,7 @@ module Citizens
     end
 
     def offset
-      params[:offset].to_i - 1
+      (params[:offset].to_i || 1) - 1
     end
   end
 end
