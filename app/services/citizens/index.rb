@@ -1,5 +1,5 @@
 module Citizens
-  class Index < Citizens::Base
+  class Index < Base
     private
 
     def result

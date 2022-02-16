@@ -1,9 +1,9 @@
 module Citizens
-  class Update < Citizens::Base
+  class Update < Base
     private
 
     def result
-      Citizen.find(params[:id]).update(params)
+      Citizen.find(id).update(params)
     end
   end
 end

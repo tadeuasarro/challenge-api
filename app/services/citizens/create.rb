@@ -1,5 +1,5 @@
 module Citizens
-  class Create < Citizens::Base
+  class Create < Base
     private
 
     def result
