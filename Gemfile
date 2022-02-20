@@ -36,6 +36,8 @@ gem 'bootsnap', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem "rack-cors"
 
+gem 'carrierwave'
+gem 'cloudinary'
 gem 'rspec', '~> 3.11'
 gem 'rubocop', '~> 0.42.0'
 

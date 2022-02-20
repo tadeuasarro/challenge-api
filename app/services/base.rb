@@ -5,8 +5,8 @@ class Base
 
   def call
     { json: result, status: :ok }
-  rescue StandardError => e
-    { json: e, status: :bad_request }
+  # rescue StandardError => e
+  #   { json: e, status: :bad_request }
   end
 
   private

@@ -13,4 +13,6 @@ class Citizen < ApplicationRecord
   enum status: [ :active, :inactive ]
 
   has_one :address
+
+  mount_uploader :picture, PictureUploader
 end
