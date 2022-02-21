@@ -6,12 +6,13 @@ module Citizens
       {
         id: citizen.id,
         name: citizen.name,
-        cpf: cpf,
-        cns: cns,
+        cpf:,
+        cns:,
         email: citizen.email,
-        phone: phone,
-        birth_date: birth_date,
-        address_id: citizen.address&.id
+        phone:,
+        birth_date:,
+        address_id: citizen.address&.id,
+        status: citizen.status
       }
     end
 
@@ -20,19 +21,19 @@ module Citizens
     end
 
     def cpf
-      number = citizen.cpf.to_s.split('')
+      number = citizen.cpf.to_s.chars
 
       "#{number.shift(3).join}.#{number.shift(3).join}.#{number.shift(3).join}-#{number.shift(2).join}"
     end
 
     def cns
-      number = citizen.cns.to_s.split('')
+      number = citizen.cns.to_s.chars
 
       "#{number.shift(3).join} #{number.shift(4).join} #{number.shift(4).join} #{number.shift(4).join}"
     end
 
     def phone
-      number = citizen.phone.to_s.split('')
+      number = citizen.phone.to_s.chars
 
       "(#{number.shift(2).join}) #{number.shift(3).join} #{number.shift(3).join} #{number.shift(3).join}"
     end

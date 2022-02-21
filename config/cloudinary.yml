@@ -8,3 +8,8 @@ production:
   cloud_name: "dw7kyau11"
   api_key: "934665138634422"
   api_secret: "tM-BydnnLq0wYRvlhnB5FXSwRe4"
+
+test:
+  cloud_name: "dw7kyau11"
+  api_key: "934665138634422"
+  api_secret: "tM-BydnnLq0wYRvlhnB5FXSwRe4"

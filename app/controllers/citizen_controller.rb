@@ -1,4 +1,6 @@
 class CitizenController < ApplicationController
+  after_action :notification, only: [:update]
+
   def index
     render Citizens::Index.new(params: index_params).call
   end

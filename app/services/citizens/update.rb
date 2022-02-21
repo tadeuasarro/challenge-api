@@ -10,7 +10,7 @@ module Citizens
       {
         name: params[:name],
         cpf: params[:cpf].gsub(/[-.]/, ''),
-        cns: params[:cns].gsub(/[ ]/, ''),
+        cns: params[:cns].gsub(/ /, ''),
         email: params[:email],
         phone: params[:phone].gsub(/[() ]/, ''),
         birth_date: params[:birth_date]
